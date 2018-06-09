@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>radiolog_viewer</class>
+ <widget class="QDialog" name="radiolog_viewer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>899</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTextEdit" name="logField">
+   <property name="geometry">
+    <rect>
+     <x>187</x>
+     <y>238</y>
+     <width>525</width>
+     <height>199</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rescanButton">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>35</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Re-scan</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="watchedDirField">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>85</y>
+     <width>290</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="watchedFileField">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>123</y>
+     <width>290</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>87</x>
+     <y>87</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Watched Dir</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>120</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Watched File</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>rescanButton</sender>
+   <signal>clicked()</signal>
+   <receiver>radiolog_viewer</receiver>
+   <slot>rescan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>rescan()</slot>
+ </slots>
+</ui>
